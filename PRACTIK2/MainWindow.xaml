@@ -1,0 +1,25 @@
+﻿<Window x:Class="PRACTIK2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRACTIK2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" FontFamily="Candara">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <Button x:Name="FirstPageButton" Width="30" Click="FirstPageButton_Click">1</Button>
+            <Button x:Name="TwoPageButton" Width="30" Click="TwoPageButton_Click">2</Button>
+            <Button x:Name="ThreePageButton" Width="30" Click="ThreePageButton_Click">3</Button>
+            <Button x:Name="FourPageButton" Width="30" Click="FourPageButton_Click">4</Button>
+            <Button x:Name="FivePageButton" Width="30" Click="FivePageButton_Click">5</Button>
+        </StackPanel>
+
+        <Frame Grid.Row="1" x:Name="MyFrame" ></Frame>
+    </Grid>
+</Window>

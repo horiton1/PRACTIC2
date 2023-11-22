@@ -1,0 +1,31 @@
+﻿<Page x:Class="PRACTIK2.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PRACTIK2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page2">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Margin="16" Padding="12" Height="42" FontWeight="bold" Foreground="#243238">Введите трехзначное число</TextBlock>
+        <TextBox x:Name="TextBox1" Grid.Row="0" Grid.Column="1" Margin="16" Padding="12" Height="Auto" Width="50"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Margin="16" Padding="12" Height="42" FontWeight="bold" Foreground="#243238">Ответ:</TextBlock>
+        <TextBox x:Name="TextBox2" Grid.Row="1" Grid.Column="1" Margin="16" Padding="12" Height="Auto" Width="50" IsReadOnly="True"/>
+
+        <Button Content="Поменять местами" Grid.Row="2" Grid.ColumnSpan="2" Height="22"  Foreground="#FFF6A5" Background="Black" Click="Button_Click" Width="100"/>
+
+    </Grid>
+</Page>
